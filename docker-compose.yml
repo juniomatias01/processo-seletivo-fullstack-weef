@@ -1,0 +1,22 @@
+version: '3'
+services:
+  postgres:
+    image: 'postgres'
+    container_name: 'event_listing_postgres'
+    environment:
+      POSTGRES_DB: 'event_listing'
+      POSTGRES_USER: 'User'
+      POSTGRES_PASSWORD: 'UserPass'
+      ALLOW_IP_RANGE: '0.0.0.0/0'
+    ports:
+      - '5432:5432'
+  postgresTest:
+    image: 'postgres'
+    container_name: 'event_listing_postgres_test'
+    environment:
+      POSTGRES_DB: 'Test'
+      POSTGRES_USER: 'TestUser'
+      POSTGRES_PASSWORD: 'TestPass'
+      ALLOW_IP_RANGE: '0.0.0.0/0'
+    ports:
+      - '5433:5432'
