@@ -1,0 +1,7 @@
+export const DRAWER_MENU_LABEL = {
+  USERS: 'USERS',
+
+  EVENT: 'EVENT',
+  EVENT_ADD: 'EVENT_ADD',
+  EVENT_LIST: 'EVENT_LIST',
+};
